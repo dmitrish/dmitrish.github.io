@@ -1,0 +1,93 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:135.0) Gecko/20100101 Firefox/135.0" version="26.0.10">
+  <diagram name="Page-1" id="g4vA7x9xGMmhjbXBI0Az">
+    <mxGraphModel dx="1975" dy="1126" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="160" y="80" width="560" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-2" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#4495D1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.cpu;" vertex="1" parent="1">
+          <mxGeometry x="180" y="90" width="44.8" height="44.8" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="160" y="240" width="280" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-4" value="&lt;span data-huuid=&quot;6726455639055875607&quot;&gt;&lt;span&gt;runs in its own isolated memory space&lt;/span&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="480" y="240" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-5" value="&lt;b&gt;Bootloader&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="80" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-6" value="&lt;div&gt;Verify Boot&lt;/div&gt;&lt;div&gt;Prepare &quot;Clean Slate&quot; Hardware (clear our registers, etc)&lt;/div&gt;&lt;div&gt;Set up and configure RAM&lt;/div&gt;&lt;div&gt;Load Kernel and RAM Disk into memory &lt;br&gt;&lt;/div&gt;&lt;div&gt;Verify TOS Image and Load TOS into memory&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="120" width="400" height="72.6" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-7" value="&lt;b&gt;Linux Kernel&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="240" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-8" value="&lt;div&gt;setup cache&lt;/div&gt;&lt;div&gt;loads drivers&lt;/div&gt;&lt;div&gt;mounts file system&lt;/div&gt;&lt;div&gt;&amp;nbsp;starts kernel daemons&lt;/div&gt;&lt;div&gt;launch app_process in Zygote mode&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="290" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-9" value="&lt;b&gt;Trusty Kernel&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="240" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-10" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="160" y="480" width="560" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-11" value="&lt;b&gt;Zygote&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="480" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="JTFcoA_yMMZBAldnWhBs-12" target="JTFcoA_yMMZBAldnWhBs-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-12" value="Trusty Driver" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="310" y="250" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-14" value="&lt;div&gt;preload Java classes&lt;/div&gt;&lt;div&gt;[android.os.*, android.view.*, java.util.*, etc]&lt;/div&gt;&lt;div&gt;preload resources&lt;/div&gt;&lt;div&gt;[fonts, ?, ..]&lt;/div&gt;&lt;div&gt;fork itself to start System Server&lt;/div&gt;&lt;div&gt;start listening on a socket&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="500" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-15" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="160" y="680" width="340" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-16" value="&lt;b&gt;System Server&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="680" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-17" value="&lt;div&gt;start Service Manager&lt;/div&gt;&lt;div&gt;start services and register them with service manager&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="175" y="710" width="305" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-19" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="550" y="680" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-20" value="&lt;b&gt;Service Manager&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="680" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-21" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="160" y="840" width="556.25" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-22" value="&lt;b&gt;Activity Manager Service&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="153.75" y="840" width="172.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-24" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="160" y="400" width="560" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-25" value="&lt;b&gt;app-process&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="157.5" y="400" width="92.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-26" value="&lt;div&gt;&lt;span class=&quot;Breadcrumbs-crumb&quot;&gt;app_process/app_main.cpp&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class=&quot;com&quot;&gt;/ --zygote : Start in zygote mode&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="285" y="415" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JTFcoA_yMMZBAldnWhBs-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="318" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-28" value="acts as DNS for System Services" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="582.5" y="725" width="105" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="JTFcoA_yMMZBAldnWhBs-29" value="send intent CATEGORY_HOME" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="852.5" width="330" height="55" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
